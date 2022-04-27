@@ -1,0 +1,81 @@
+-- METRICAS DE ESTRUCTURAS DE DATOS
+** LADO DEL SERVER
+
+-- NEW FILE JS --
+
+La primera 4 filas agregaremos el siguiente comentadio
+de esta forma sabemos a que va dirigida su funcionalidad y parametros
+
+ /*
+ *  Name_file :
+ *  Description:
+*   Parameter:
+    @
+    @
+ */
+
+
+/*--------------------------------------------------*/
+// Dependencies
+
+aqui debajo inicializamos todos los parametros y rutas a usar
+en el fichero.
+
+const routerUser = require("./routers/routerUser");
+const path = require("path");
+const express = require("express");
+...
+...
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(cors());
+app.use("/user", routerUser);
+...
+..
+
+Los agrupamos por tipo de parametros 
+
+/*--------------------------------------------------*/
+// Functionality systems
+
+
+Aqui declaramos y definimos las funciones 
+
+/* Código 500: Internal server error */ -> encima de cada funcio explicamos brevemente su comportamiento
+
+function middlewareServerError(error, request, response, next) {
+----response.status(500);
+----console.log(error.message);
+----console.log(error.stack);
+---- response.render("500", 
+    {   
+            // @mensaje ...
+            mensaje: error.message,
+           
+            // @pila ...
+            pila: error.stack
+     });
+}
+
+1.TENER ENCUENTA LA SANGRIA DENTRO DE LAS FUNCIONES.
+2.VISIBILIDAD DE LA ABERTURA Y CIERRE DE LLAVES , CHORCHETES Y PARENTESIS.
+3.LOS COMENTARIOS DENTRO DE LAS FUNCIONES :  USAR // Y MENCIONAR LAS VARIABLES REFERENTE AL COMENTARIO
+
+
+/*---------------------------------------------------------*/
+//Data export
+
+Aqui declaramos las funciones o datos que van hacer exportadas.
+En caso contrario cambiamos el nombre Data export por el contenido que se 
+desea especificar.
+
+
+Si tenemos Condiciones if/else 
+
+         if (Q) 
+         {
+
+         }
+         else
+         {
+
+         }

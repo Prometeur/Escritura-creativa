@@ -1,0 +1,62 @@
+-- MÉTRICAS SERVER
+
+1. Utilizamos las métricas descriptas en METRICAS_FILE_JS
+
+NEW ROUTER
+   Aplicamos para casos router:
+    
+    router.post("/insert-group/:id", controller_teacher.crearGrupo);
+     -- escribimos la ruta 
+          router.<peticion>("/<name-accion>-<entidad>", controller_<name>.<name_function>);
+
+
+NEW CONTROLLER
+
+    1. const model_teacher = new model(pool);
+    El nombramiento del model usaremos model_<nombre>
+    
+    2.Nombramiento de funciones con Camel Case low
+
+    3. Arriba de cada funcion definidad un comentario de comportamiento
+ 
+       /** Esta funcion sirve para ....  */
+        function createGroup(request, response)
+    
+    4. Condiciones if/else 
+
+         if (Q) 
+         {
+
+         }
+         else
+         {
+
+         }
+
+
+
+ NEW MODEL 
+    
+    class  model<nombre>  { 
+        
+        <nombre> siguiendo camel case low
+
+        ....
+        ....
+        ...
+
+        nombre de las fucniones <accion><entridad>
+            ejemplo  createGroup
+ 
+
+        /**  */  <- comentario sobre el comportamiento de cada funcion
+        createGrupo ( , , ){
+             | aqui no
+            comenzar una linea despues dentro de la función
+            ....
+            .....
+
+        }
+    
+
+    }
