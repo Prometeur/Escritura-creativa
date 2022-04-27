@@ -1,0 +1,60 @@
+.scriptList{
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.scriptList a{
+    color: black;
+    text-decoration: none !important;
+    text-align:center;
+}
+
+.scriptCardContainer{
+    margin-top: 2rem;
+}
+
+.scriptCard{
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    text-decoration: none;
+    background-color: blanchedalmond;
+}
+
+.scriptCard:hover{
+    background-color:rgb(216, 201, 181);
+    color: black;
+    text-decoration: none;
+}
+
+.scriptCard.h6{
+    color:sienna;
+    text-decoration: none;
+    padding: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.scriptCard.h5{
+    color: black;
+    text-decoration: none;
+    padding: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.scriptCard.h5:hover{
+    color: black;
+    text-decoration: none !important;
+}
+
+.scriptCard.a{
+    color: black;
+    text-decoration: none !important;
+}
+
+.scriptCard.a:hover{
+    color: black;
+    text-decoration: none !important;
+}

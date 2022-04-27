@@ -1,0 +1,203 @@
+.writing-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.writing-content {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.challenge-card {
+    width: 55%;
+    height: 80%;
+    background: #ffffff;
+    margin: auto;
+}
+
+.writing-card {
+    width: 55%;
+    height: 80%;
+    background: #ffffff;
+    margin: auto;
+}
+
+.challenge-inputs {
+    width: 100%;
+    padding: .5rem;
+    margin: 0 0 2rem;
+    border: 2px solid #dedede;
+    font-size: 1rem;
+}
+
+.challenge-inputs p span {
+    font-size: 1rem !important;
+}
+
+
+.form-input{
+    width: 100%; 
+    height: 30px;
+    display: block;
+    padding-left: 10px;
+    /* border-radius: 10px; */
+  
+}
+
+.form-media {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    /* background-color: #272c34; */
+    /* border: 2px solid red; */
+    display: inline-block;
+}
+
+.writing-content h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+
+.label {
+    height: 50px;
+    width: 100px;
+    background-color:#2a3eb1;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 2rem ;
+    cursor: pointer; 
+}
+
+
+.challenge-card h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.challenge-card p {
+    /* font-size: 1.5rem; */
+    text-indent: 1em;
+    text-align: left;
+}
+
+
+
+.writing-inputs {
+    width: 80%;
+    padding: 5rem;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.challenge-td {
+    padding-top:0.5rem;
+    padding-right:1rem;
+    padding-bottom:0.5rem;
+    padding-left: 1rem;
+    text-align: center;
+   
+}
+
+.challenge-th {
+    padding: 1rem;
+    text-align: center; 
+}
+
+
+
+/* .form-inputs{
+    border: 1px solid rgb(62, 161, 84);
+    height: 800px;
+} */
+
+
+.editorClassName1{
+    /* border: 1px solid  #cc1534; */
+    height: 55vh;
+    width:  163vh;
+}
+
+
+ .wrapperClassName1{
+    /* border: 1px solid rgb(141, 62, 161); */
+    width:auto;
+    margin-top: .75rem;
+    height: 68vh;
+     margin-bottom: 2.5rem;
+} 
+
+.toolbarClassName1{
+    /* border: 1px solid rgb(161, 62, 62); */
+    width:150vh;
+}
+
+
+@media screen and (min-width: 320px) {
+    .toolbarClassName1 {
+        width: 35vh;
+    }
+
+    .editorClassName1 {
+        border: 1px solid  #a39d9d;
+        height: 45vh;
+        width: 35vh;
+    }
+
+    .wrapperClassName1{
+        width:auto;
+        height: 80vh;
+        margin-top: .75rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .toolbarClassName1 {
+        width: 98vh;
+    }
+
+    .editorClassName1 {
+        border: 1px solid lavender;
+        height: 50vh;
+        width: 98vh;
+    }
+
+    .wrapperClassName1{
+        width:auto;
+        height: 80vh;
+        margin-top: .75rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .toolbarClassName1 {
+        width: 161vh;
+    }
+
+    .editorClassName1 {
+        border: 1px solid lavender;
+        height: 40vh;
+        width: 161vh;
+    }
+
+    .wrapperClassName1{
+        width:auto;
+        height: 65vh;
+        margin-top: .75rem;
+        margin-bottom: 6rem;
+    }
+
+}
